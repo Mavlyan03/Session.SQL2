@@ -417,7 +417,7 @@ SELECT COUNT(cars) FROM cars;
 SELECT * FROM cars WHERE brand LIKE 'Hyundai';
 
 -- #4 Показать все красные и синие автомобили
-SELECT * FROM cars WHERE color NOT LIKE 'Red' AND color NOT LIKE 'Blue';
+SELECT * FROM cars WHERE color  LIKE 'Red' AND color LIKE 'Blue';
 
 -- #5 Показать все автомобили, выпущенные с 2000 по 2010 год
 SELECT * FROM cars WHERE year_of_issue BETWEEN 2000 AND 2010;
@@ -427,7 +427,6 @@ SELECT COUNT(cars) FROM cars WHERE brand LIKE 'Chevrolet';
 
 -- #7 Отображение среднего года выпуска автомобилей
 SELECT AVG(year_of_issue) FROM cars;
-
 
 -- # 8 Показать автомобили, где бренд равен Audi, Toyota, Kia и Ford
 SELECT * FROM cars WHERE brand LIKE 'Audi' AND brand LIKE 'Toyota' AND brand LIKE 'Kia' AND brand LIKE 'Ford';
